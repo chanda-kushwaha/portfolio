@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chanda Kushwaha</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#my-plan">My-plan</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="gallery.html">Gallery</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="card">
+            <h2>About me</h2>
+            <p>I am learning these skills</p>
+            <ul>
+                <li>frontend development
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>react</li>
+                    </ul>
+                </li>
+                <li>backend development</li>
+            </ul>
+        </section>
+        <section id="my-plan" class="card">
+            <h2>My plan </h2>
+            <p>I study 2 hours every day </p>
+            <div class="table-wrap">
+                <table>
+                    <caption> my 6-month study plan</caption>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>month 1:</td>
+                            <td> HTML, CSS, Git aur JavaScript ki neev. </td>
+                        </tr>
+                        <tr>
+                            <td>month 2:</td>
+                            <td>Async JS, React aur Tailwind. </td>
+                        </tr>
+                        <tr>
+                            <td>month 3:</td>
+                            <td>Node, Express, MongoDB, SQL, login (JWT) aur deploy. </td>
+                        </tr>
+                        <tr>
+                            <td>month 4:</td>
+                            <td>Next.js, testing aur machine coding hai.</td>
+                        </tr>
+                        <tr>
+                            <td>month 5:</td>
+                            <td>AI ko apps me jodna. AI chatbot, resume feedback tool aur RAG wala notes project.</td>
+                        </tr>
+                        <tr>
+                            <td>month 6:</td>
+                            <td> Portfolio, resume,preparation of interview aur job applications.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <h3>My daily routine</h3>
+            <ol>
+                <li>Revise yesterday's topic (20 min)</li>
+                <li>Learn a new topic (90 min)</li>
+                <li>practice task(30 min)</li>
+            </ol>
+
+        </section>
+        <section id="projects" class="card">
+            <h2>My upcoming projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Landing page</h3>
+                    <p>A responsive page for a local shop</p>
+                    <span class="tag">Coming soon</span>
+                    <a href="#">View</a>
+                </div>
+                <div class="project">
+                    <h3>Todo app</h3>
+                    <p>An app to manage daily tasks.</p>
+                    <span class="tag tag-green">In progress</span>
+                    <a href="#">View</a>
+                </div>
+                <div class="project">
+                    <h3>Weather app</h3>
+                    <p>Shows live weather of any city.</p>
+                    <span class="tag tag-blue">Planned</span>
+                    <a href="#">View</a>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Please fill this form</p>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="state">Which state are you from</label>
+                <select id="state" name="state">
+                    <option value="">--Select--</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="uttar-pradesh">U.P</option>
+                    <option value="others">Others</option>
+                </select>
+                <p>what do you want to become?</p>
+                <div class="options">
+                    <input type="radio" id="teacher" name="goal" value="teacher">
+                    <label for="teacher">Teacher</label>
+                    <input type="radio" id="webdeveloper" name="goal" value="webdeveloper">
+                    <label for="webdeveloper">Webdeveloper</label>
+                </div>
+
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I Agree</label>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date"><br>
+
+                <button type="submit">send</button>
+
+            </form>
+
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Chanda Kushwaha 2026</p>
+        <p>Made with HTML &amp; CSS</p>
+    </footer>
+</body>
+
+</html>

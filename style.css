@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5fa;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #4f46e5;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: white;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4f46e5;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(164, 211, 211);
+    border: 2px solid #222;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    border: 1px solid;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(83, 83, 158);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(78, 78, 86);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+
+#contact {
+    background-color: #eef2ff;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    font-weight: normal;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #f9fafb;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    background-color: #fef3c7;
+    color: #92400e;
+    border-radius: 999px;
+    align-self: flex-start;
+
+}
+
+.tag-green {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.tag-blue {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.options {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #666;
+}
+
+footer p {
+    margin: 0;
+}
+
+.project a {
+    margin-top: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 220px;
+    gap: 1rem;
+}
+
+.gallery figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery img {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+    }
+
+    .big {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: center;
+    }
+}
